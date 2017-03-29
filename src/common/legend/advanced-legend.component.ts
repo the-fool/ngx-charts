@@ -40,15 +40,10 @@ import { formatLabel } from '../label.helper';
             <div
               class="item-value"
               ngx-charts-count-up
-              [countTo]="legendItem.value">
-            </div>
-            <div class="item-label">{{legendItem.label}}</div>
-            <div
-              class="item-percent"
-              ngx-charts-count-up
               [countTo]="legendItem.percentage"
               [countSuffix]="'%'">
             </div>
+            <div class="item-label">{{legendItem.label}}</div>
           </div>
         </div>
       </div>
